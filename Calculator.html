@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="Calcul.css">
+    <script src="./Calcul.js"></script>
+</head>
+<body>
+    <table class = "mainbox">
+        <tr>
+            <td colspan="4">
+                <input id="record" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input id="display" type="text">
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="4">
+                <input id="result" type="text">
+            </td>
+        </tr>
+        <tr class="topbox">
+            <td onclick="reset()" colspan="2" class="clear">AC</td>
+            <td onclick="back()"class="back"><</td>
+            <td onclick="add_('-')">-</td>
+        </tr>
+        <tr class="number">
+            <td onclick="add(1)">1</td>
+            <td onclick="add(2)">2</td>
+            <td onclick="add(3)">3</td>
+            <td onclick="add_('+')">+</td>
+        </tr>
+        <tr class="number">
+            <td onclick="add(4)">4</td>
+            <td onclick="add(5)">5</td>
+            <td onclick="add(6)">6</td>
+            <td onclick="add_('/')">÷</td>
+        </tr>
+        <tr class="number">
+            <td onclick="add(7)">7</td>
+            <td onclick="add(8)">8</td>
+            <td onclick="add(9)">9</td>
+            <td onclick="add_('*')">×</td>
+        </tr>
+        <tr class="number">
+            <td onclick="add(0)" colspan="3">0</td>
+            <td onclick="result()">=</td>
+        </tr>
+    </table>
+</body>
+</html>

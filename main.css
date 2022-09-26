@@ -1,0 +1,61 @@
+/* COMMON */
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    height: 5000px;
+
+    background-color: beige;
+  }
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: lightsalmon;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 900;
+}
+
+.header .title{
+    font-size: 50px;
+    font-weight: 900;
+
+    color: antiquewhite;
+
+    position: relative;
+    left: 87%;
+    top: 40%;
+}
+
+/* MAIN-BLOCK */
+
+.main-block{
+    position: relative;
+
+    width: 70%;
+    height: 100%;
+
+    background-color: bisque;
+
+    margin: 120px auto 0 auto;
+}
+
+/* CALCULATOR */
+
+.main-block .calcul{
+    width: 100px;
+    height: 100px;
+
+    background-color: blueviolet;
+
+    position: absolute;
+    
+    top: 20px;
+    left: 100px;
+}
