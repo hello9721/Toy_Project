@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
-    <link rel="stylesheet" href="Calcul.css">
-    <script src="./Calcul.js"></script>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="./Calculator.js"></script>
 </head>
 <body>
     <table class = "mainbox">
+        
+        <!-- DISPLAY -->
+
         <tr>
             <td colspan="4">
                 <input id="record" type="text">
@@ -26,6 +29,9 @@
                 <input id="result" type="text">
             </td>
         </tr>
+        
+        <!-- INPUT AREA -->
+        
         <tr class="topbox">
             <td onclick="reset()" colspan="2" class="clear">AC</td>
             <td onclick="back()"class="back"><</td>
@@ -51,7 +57,7 @@
         </tr>
         <tr class="number">
             <td onclick="add(0)" colspan="3">0</td>
-            <td onclick="result()">=</td>
+            <td onclick="answer()">=</td>
         </tr>
     </table>
 </body>
