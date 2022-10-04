@@ -4,7 +4,7 @@ body{
     font-family: 'Nanum Gothic', sans-serif;
     height: 5000px;
 
-    background-color: beige;
+    background-color: #fff;
   }
 
 /* HEADER */
@@ -12,7 +12,7 @@ body{
 .header{
     width: 100%;
     height: 120px;
-    background-color: lightsalmon;
+    background-color: #00509293;
 
     position: fixed;
     top: 0;
@@ -26,10 +26,10 @@ body{
     font-size: 50px;
     font-weight: 900;
 
-    color: antiquewhite;
+    color: #fff;
 
     position: relative;
-    left: 87%;
+    left: 72%;
     top: 40%;
 }
 
@@ -41,8 +41,6 @@ body{
     width: 70%;
     height: 100%;
 
-    background-color: bisque;
-
     margin: 120px auto 0 auto;
 }
 
@@ -52,7 +50,10 @@ body{
     width: 100px;
     height: 100px;
 
-    background-color: blueviolet;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zcwWi3Eg_bsH1vNjmrMqpKbjYuK4SyKqsg&usqp=CAU");
+    background-size: cover;
+
+    border-radius: 10px;
 
     position: absolute;
     

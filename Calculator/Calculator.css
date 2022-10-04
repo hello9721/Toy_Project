@@ -1,6 +1,13 @@
 /* COMMON */
+
+body{
+    background-color: #00509293;
+}
+
 .mainbox{
-    border: solid 2px black;
+    border: solid 2px #06315580;
+
+    background-color: #fff;
     
     width: 500px;
     height: 700px;
@@ -9,7 +16,7 @@
 }
 
 td{
-    border: solid 0.5px lightgray;
+    border: solid 0.5px #0843745e;
 
     box-sizing: border-box;
 }
@@ -31,7 +38,8 @@ input{
 
     border: none;
 
-    background-color: lightgray;
+    background-color: #0843745e;
+    color: rgb(70, 70, 70);
 }
 
 input:focus{
@@ -40,7 +48,7 @@ input:focus{
 
 #record{
     font-size: 30px;
-    color: gray;
+    color: rgb(105, 105, 105);
 }
 
 /* ERASE */
@@ -48,10 +56,12 @@ input:focus{
     font-size: 40px;
     text-align: center;
     font-weight: 700;
+
+    color: rgb(70, 70, 70);
 }
 
 .topbox td:hover{
-    background-color: lightgray;
+    background-color: #0843745e;
 }
 
 /* NUMBER */
@@ -59,8 +69,10 @@ input:focus{
     font-size: 40px;
     text-align: center;
     font-weight: 700;
+
+    color: rgb(70, 70, 70);
 }
 
 .number td:hover{
-    background-color: lightgray;
+    background-color: #0843745e;
 }
