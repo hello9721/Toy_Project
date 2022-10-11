@@ -5,14 +5,74 @@ body{
     height: 5000px;
 
     background-color: #fff;
-  }
+}
+
+a{
+    display: block;
+    width: 100px;
+    height: 100px;
+
+    margin: 24.15px;
+}
+
+a div{
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 10px;
+
+    position: absolute;
+    
+}
+
+/* TOOLTIP */
+
+.tooltip{
+
+    position: relative;
+    display: block;
+
+}
+
+.tooltip .tooltip_t{
+
+    width: 90px;
+    
+    background-color: rgb(12, 83, 12);
+    opacity: 0;
+    color: #fff;
+    
+    text-align: center;
+    
+    border-radius: 5px;
+    z-index: 1;
+
+    transition: transform 0.1s, opacity 0.4s;
+
+}
+
+.tooltip:hover .tooltip_t{
+
+    opacity: 0.8;
+
+    transition: transform 0.1s, opacity 1.4s;
+
+}
+
+.tooltip .tooltip_up {
+    position: absolute;
+
+    bottom: -25px;
+    left: 5px;
+}
 
 /* HEADER */
 
 .header{
     width: 100%;
     height: 120px;
-    background-color: #00509293;
+    background-color: #8d8d8d;
 
     position: fixed;
     top: 0;
@@ -29,7 +89,7 @@ body{
     color: #fff;
 
     position: relative;
-    left: 72%;
+    left: 62%;
     top: 40%;
 }
 
@@ -38,25 +98,96 @@ body{
 .main-block{
     position: relative;
 
-    width: 70%;
-    height: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    width: 900px;
+    height: 3000px;
+    
+    box-sizing: border-box;
 
     margin: 120px auto 0 auto;
+    padding: 10px 5px;
+}
+
+.line{
+
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 /* CALCULATOR */
 
 .main-block .calcul{
-    width: 100px;
-    height: 100px;
 
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zcwWi3Eg_bsH1vNjmrMqpKbjYuK4SyKqsg&usqp=CAU");
-    background-size: cover;
+    border: solid 1px green;
+    background-color: #fff;
 
-    border-radius: 10px;
+    transition: transform 0.1s, background-color 0.4s;
 
-    position: absolute;
+}
+
+.main-block .calcul .material-icons.md-48{
+
+    font-size: 100px;
     
-    top: 20px;
-    left: 100px;
+    color: green;
+
+    transition: transform 0.1s, color 0.4s;
+
+}
+
+.main-block .calcul:hover{
+
+    background-color: green;
+
+    transition: transform 0.1s, background-color 0.6s;
+
+}
+
+.main-block .calcul:hover .material-icons.md-48{
+
+    color: #fff;
+
+    transition: transform 0.1s, color 1s;
+
+}
+
+/* NEXT */
+
+.main-block .other{
+
+    border: solid 1px green;
+    background-color: #fff;
+
+    transition: transform 0.1s, background-color 0.4s;
+
+}
+
+.main-block .other .material-icons.md-48{
+
+    font-size: 100px;
+    
+    color: green;
+
+    transition: transform 0.1s, color 0.4s;
+
+}
+
+.main-block .other:hover{
+
+    background-color: green;
+
+    transition: transform 0.1s, background-color 0.6s;
+
+}
+
+.main-block .other:hover .material-icons.md-48{
+
+    color: #fff;
+
+    transition: transform 0.1s, color 1s;
+
 }
